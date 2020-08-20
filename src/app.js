@@ -11,9 +11,10 @@ app.use(express.static(publicDirectory));
 app.use(bodyParser.json());
 
 app.post('/enviar_correo', (req, res) => {
-  console.log("entro a enviar_correo");
+  console.log("entro a endpoint enviar_correo");
   var correo = req.body.correo;
   var texto = req.body.texto;
+  console.log("correo: " + correo + ", texto: " + texto);
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -37,7 +38,7 @@ app.post('/enviar_correo', (req, res) => {
     }
   });
   var msg = "Correo enviado correctamente a: " + correo;
-  console.log(msg);
+  //console.log(msg);
   res.send(msg);
 });
 
