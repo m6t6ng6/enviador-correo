@@ -1,0 +1,26 @@
+{
+  "name": "enviador-correo",
+  "version": "1.0.0",
+  "description": "hackaton_8-19",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m6t6ng6/enviador-correo.git"
+  },
+  "author": "m6t6ng6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m6t6ng6/enviador-correo/issues"
+  },
+  "homepage": "https://github.com/m6t6ng6/enviador-correo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
