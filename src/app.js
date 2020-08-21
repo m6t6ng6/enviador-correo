@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');   // paquete de nodemailer
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -30,11 +30,11 @@ app.post('/enviar_correo', (req, res) => {
     text: texto
   };
   
-  transporter.sendMail(mailOptions, function(error, info){
+  transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
     } else {
-      console.log('Email sent: ' + info.response);
+      console.log('Correo enviado: ' + info.response);
     }
   });
   var msg = "Correo enviado correctamente a: " + correo;

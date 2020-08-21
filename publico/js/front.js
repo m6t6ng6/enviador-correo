@@ -2,9 +2,9 @@ $( document ).ready(function() {
 });
 
 $('#formulario').submit((e) => {
-    e.preventDefault();
+    e.preventDefault();  // sirve para parar la funcion nativa de envio de formulario
 
-    console.log("hola");
+    console.log("Ingresa a la funcion de js de front");
 
     $.ajax({
 
