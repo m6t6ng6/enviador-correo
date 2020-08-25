@@ -66,9 +66,15 @@ body {
 
 button {
     width: 60%;
-    margin: 5px 0 25px;
+    margin: 20px 10px 25px;
 }
 
-.modal-content h2 {
+.modal-content h2, .formatoLista {
     color: white;
+}
+
+#cantidadDeLineas {
+    height: 35px;
+    width: 10%;
+    margin: 0 0 25px;
 }
